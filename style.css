@@ -1,0 +1,127 @@
+body {
+  background-color: white;
+}
+
+/* h1{
+    color: tomato;
+} */
+
+#titulo {
+  color: brown;
+}
+
+/* Ambos casos hacen lo mismo, cambia el color al titulo, uno por la etiqueta y el otro es por el id. */
+
+/* p {
+    color: salmon;
+} */ /* Acá estamos seleccionando todo los parrafos. */
+
+p.texto {
+  color: saddlebrown;
+}
+
+p.especial {
+  color: mediumseagreen;
+}
+/* Esto se seleccionar por la clase. */
+
+div p {
+  color: aquamarine;
+}
+
+div h2,
+div h3 {
+  color: red;
+}
+
+* {
+  font-size: 24px; /* Todo tendra un tamaño de 24px */
+  /* color: black; */
+}
+
+.color{
+    /* color: #f00000; modo hexadecimal*/
+    /* color: rgb(0, 255, 255); */
+    /* border: 4px red outset; /* Primero va el grosor, luego va el color, y luego va el estilo*/
+    /*  dashed linea cortada.
+        solid linea solida.
+        Dotted es una linea con puntos.
+        double linea doble
+        groove
+        ridge
+        inset
+        outsed
+        none
+        hidden
+        */
+    border-style: solid;
+    border-color: goldenrod;
+    border-radius: 4px;
+    /* border-width: 4px; Pixeles*/
+    /* border-width: 1cm; centimetros*/
+    /* border-width: 5mm; Milimetro */
+    /* border-width: 1in; Pulgada*/
+    /* border-width: 5pt; Puntos */
+    /* border-width: 1pc; Picas */
+    /* border-width: 2em; em quiere decir el tamaño de la fuente que se esta ocupando en la actualidad */
+    border-width: 2rem; /* rem quiere decir que es relativo al tamaño de la fuente raiz */
+}
+
+#fondo{
+    background-color: rgba(255,0,0);
+    /* opacity: 0.3; */
+    /* background-image: url('labrador.jpeg'); */
+    /* background-image: url('Dog.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center top; */
+    height: 200px;
+    background: #f00 url('labrador.jpeg') repeat-y center bottom / 100px 100px;
+    background-size: 100px 100px;
+}
+
+.margen{
+    background-color: chocolate;
+    /* margin: 15px 20px 25px 30px; margin, agrega espacios fuera del elemento. 1er valor es arriba, 2do derecha, 3ro abajo, 4to izquierda. */
+    /* padding: 30px 25px 20px 15px; Padding agregar espacios dentro del elemento */
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red; /* Outline, es como un border pero este se coloca justo por fuera del border, pero este esta antes del margin, y este recibe las mismas propiedades del border. */
+}
+
+.text{
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  text-decoration: underline; /* Subrrayado. */
+  text-decoration: line-through; /* Texto tachado. */
+  text-decoration: overline; /* Por encima del texto. */
+  text-shadow: 3px 5px 5px blueviolet; /* sombra 1ro derecha, 2da abajo, 3ro difuminado, color */
+}
+
+a:link{
+  color:blueviolet;
+}
+
+a:visited{
+  color: grey;
+}
+
+a:hover{
+  font-size: 30px;
+  color:yellow
+}
+
+a:active{
+  color: red;
+}
+
+ul{
+  background-color: cyan;
+  list-style-type: georgian;
+  /* padding-left: 0; */
+  /* list-style-position: inside; */
+}
